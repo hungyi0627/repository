@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 72px;
+}
+
+.carousel-item img {
+  height: 540px;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+@media (max-width: 991.98px) {
+  .carousel-item img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-item img {
+    height: 320px;
+  }
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+  color: #ffffff !important;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+}
+
+.carousel-caption p {
+  color: #f8f9fa !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: none !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff !important;
+}
+
+.card-img-top {
+  height: 210px;
+  object-fit: cover;
+}
+
+.brand-card {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffc107 !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}

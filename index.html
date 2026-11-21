@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LENS & LIGHT｜各大相機品牌響應式指南</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="#">
+        <i class="bi bi-camera-fill me-2"></i>LENS & LIGHT
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#heroCarousel">精選焦點</a></li>
+          <li class="nav-item"><a class="nav-link" href="#brandsSection">六大品牌</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faqSection">選購常見問答</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactSection">預約試拍 & 門市</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <button class="btn btn-warning btn-sm fw-bold w-100" data-bs-toggle="modal" data-bs-target="#specModal">
+              <i class="bi bi-table me-1"></i>全品牌規格速查
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="light">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="全片幅相機">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <span class="badge bg-warning text-dark mx-auto mb-2">CAMERA GUIDE 2026</span>
+          <h1 class="display-5 fw-bold">探索全球六大相機品牌</h1>
+          <p class="lead d-none d-md-block">橫跨全片幅高速旗艦、復古底片色彩與德系光學工藝，一次看懂各家系統優勢。</p>
+          <div class="mt-2">
+            <a href="#brandsSection" class="btn btn-warning fw-bold px-4">開始瀏覽品牌</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="復古街拍相機">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <span class="badge bg-info text-dark mx-auto mb-2">STREET PHOTOGRAPHY</span>
+          <h2 class="display-5 fw-bold">復古機械美學與底片直出</h2>
+          <p class="lead d-none d-md-block">不需繁瑣後期修圖，用最純粹的快門轉盤記錄街頭瞬間。</p>
+          <div class="mt-2">
+            <a href="#faqSection" class="btn btn-outline-light px-4">查看新手選購 QA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="專業鏡頭群">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <span class="badge bg-danger mx-auto mb-2">EXPERIENCE CENTER</span>
+          <h2 class="display-5 fw-bold">台北旗艦展示中心免費試拍</h2>
+          <p class="lead d-none d-md-block">現場提供六大品牌機身與大三元鏡頭群，由專業攝影顧問一對一導覽。</p>
+          <div class="mt-2">
+            <a href="#contactSection" class="btn btn-warning fw-bold px-4">線上預約體驗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section id="brandsSection" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">主流相機品牌圖鑑</h2>
+        <p class="text-secondary">
+          調整瀏覽器寬度即可體驗：<span class="badge bg-secondary">手機 1 欄</span>
+          <span class="badge bg-secondary">平板 2 欄</span>
+          <span class="badge bg-secondary">桌機 3 欄</span>
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 brand-card border-secondary">
+            <img src="C:\Users\user\Downloads\sony.jpg" class="card-img-top" alt="Sony Camera">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="card-title fw-bold mb-0">SONY</h4>
+                <span class="badge bg-warning text-dark">E-Mount</span>
+              </div>
+              <p class="card-text text-secondary flex-grow-1">
+                以領先業界的 AI 主體辨識自動對焦與輕量化機身著稱，擁有最龐大的原廠與副廠鏡頭生態系，是動靜態雙修玩家的首選。
+              </p>
+              <button class="btn btn-outline-warning w-100 mt-3" data-bs-toggle="modal" data-bs-target="#specModal">
+                <i class="bi bi-info-circle me-1"></i>查看旗艦機規格
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 brand-card border-secondary">
+            <img src="https://images.unsplash.com/photo-1519638831568-d9897f54ed69?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Canon Camera">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="card-title fw-bold mb-0">CANON</h4>
+                <span class="badge bg-danger">RF-Mount</span>
+              </div>
+              <p class="card-text text-secondary flex-grow-1">
+                最強的...。具備極佳的人體工學握感與白裡透紅的自然人像膚色，搭配雙像素 CMOS AF II 對焦系統，深受婚禮與人像攝影師青睞。
+              </p>
+              <button class="btn btn-outline-warning w-100 mt-3" data-bs-toggle="modal" data-bs-target="#specModal">
+                <i class="bi bi-info-circle me-1"></i>查看旗艦機規格
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 brand-card border-secondary">
+            <img src="https://images.unsplash.com/photo-1617005082133-548c4dd27f35?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Nikon Camera">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="card-title fw-bold mb-0">NIKON</h4>
+                <span class="badge bg-warning text-dark">Z-Mount</span>
+              </div>
+              <p class="card-text text-secondary flex-grow-1">
+                超大口徑 Z 接環解放光學設計極限，機身耐寒防滴防塵性能強悍，結合高動態範圍畫質與 RED 電影色彩技術，稱霸風景與生態領域。
+              </p>
+              <button class="btn btn-outline-warning w-100 mt-3" data-bs-toggle="modal" data-bs-target="#specModal">
+                <i class="bi bi-info-circle me-1"></i>查看旗艦機規格
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 brand-card border-secondary">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Fujifilm Camera">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="card-title fw-bold mb-0">FUJIFILM</h4>
+                <span class="badge bg-success">X / GFX Mount</span>
+              </div>
+              <p class="card-text text-secondary flex-grow-1">
+                完美融合復古機械轉盤與獨家「底片模擬色調」，照片直出即具濃厚電影感，同時提供輕巧 APS-C 與一億畫素中片幅系統。
+              </p>
+              <button class="btn btn-outline-warning w-100 mt-3" data-bs-toggle="modal" data-bs-target="#specModal">
+                <i class="bi bi-info-circle me-1"></i>查看旗艦機規格
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 brand-card border-secondary">
+            <img src="https://images.unsplash.com/photo-1581591524425-c7e0978865fc?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Leica Camera">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="card-title fw-bold mb-0">LEICA</h4>
+                <span class="badge bg-danger">M / L Mount</span>
+              </div>
+              <p class="card-text text-secondary flex-grow-1">
+                德國百年光學工藝結晶，以經典旁軸測距結構與獨一無二的鏡頭空氣感（Leica Look）聞名，兼具紀實創作實力與極高收藏價值。
+              </p>
+              <button class="btn btn-outline-warning w-100 mt-3" data-bs-toggle="modal" data-bs-target="#specModal">
+                <i class="bi bi-info-circle me-1"></i>查看旗艦機規格
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 brand-card border-secondary">
+            <img src="https://images.unsplash.com/photo-1500634245200-e5245c7574ef?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Panasonic Camera">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="card-title fw-bold mb-0">PANASONIC</h4>
+                <span class="badge bg-primary">L / M43 Mount</span>
+              </div>
+              <p class="card-text text-secondary flex-grow-1">
+                Lumix 系列專為影視創作者打造，具備業界頂尖機身五軸防手震、內建散熱風扇與 Open Gate 全片幅錄影能力。
+              </p>
+              <button class="btn btn-outline-warning w-100 mt-3" data-bs-toggle="modal" data-bs-target="#specModal">
+                <i class="bi bi-info-circle me-1"></i>查看旗艦機規格
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faqSection" class="py-5 bg-body-tertiary border-top border-bottom">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">新手選購相機常見問答 (FAQ)</h2>
+        <p class="text-secondary">透過 Accordion 手風琴元件展開關鍵選機知識</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="accordion" id="cameraFaqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                  Q1：全片幅（Full-Frame）與 APS-C 片幅該怎麼選？
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#cameraFaqAccordion">
+                <div class="accordion-body text-secondary">
+                  <strong>全片幅</strong>感光元件面積大，在夜間高感光度（ISO）雜訊更低、淺景深虛化效果更明顯，適合追求極致畫質與商業接案的玩家；<strong>APS-C</strong> 則具備機身與鏡頭輕巧平價的優勢，非常適合日常街拍、旅遊隨身攜帶。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Q2：為什麼大家都說「買相機其實是在選鏡頭接環系統」？
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#cameraFaqAccordion">
+                <div class="accordion-body text-secondary">
+                  因為不同品牌的鏡頭接環無法直接混用。例如選擇 <strong>Sony E 接環</strong>或 <strong>L-Mount 聯盟</strong>，就能以實惠價格購買 Sigma、Tamron 等高素質副廠鏡頭；若偏好原廠頂級光學，Canon RF 與 Nikon Z 的高階鏡頭群則有獨特規格優勢。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Q3：完全不想用電腦修圖，哪個品牌的「照片直出」最推薦？
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#cameraFaqAccordion">
+                <div class="accordion-body text-secondary">
+                  若喜歡文青底片感與街頭氛圍，首推 <strong>Fujifilm</strong>（內建 Classic Neg.、Nostalgic Neg. 等經典軟片模擬）；若拍攝主題以女朋友、家人與小孩為主，<strong>Canon</strong> 白裡透紅的直出膚色表現最討喜。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactSection" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">預約門市試拍 & 交通位置</h2>
+        <p class="text-secondary">手機版上下排列、平板對半並排、桌機採 7:5 黃金比例配置</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-12 col-md-6 col-lg-7">
+          <div class="card h-100 border-secondary p-4">
+            <h4 class="fw-bold mb-3"><i class="bi bi-calendar-check text-warning me-2"></i>線上預約實機體驗</h4>
+            <form onsubmit="event.preventDefault(); alert('預約已送出！我們將透過簡訊與您確認試拍時段。');">
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="userName" class="form-label">您的姓名 *</label>
+                  <input type="text" class="form-control" id="userName" placeholder="請輸入真實姓名" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="userPhone" class="form-label">聯絡電話 *</label>
+                  <input type="tel" class="form-control" id="userPhone" placeholder="09xx-xxx-xxx" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="userEmail" class="form-label">電子信箱 *</label>
+                  <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="brandSelect" class="form-label">想體驗的主力品牌 *</label>
+                  <select class="form-select" id="brandSelect" required>
+                    <option value="" selected disabled>請選擇相機品牌...</option>
+                    <option value="Sony">Sony (α 全系列)</option>
+                    <option value="Canon">Canon (EOS R 系列)</option>
+                    <option value="Nikon">Nikon (Z 系列)</option>
+                    <option value="Fujifilm">Fujifilm (X / GFX 系列)</option>
+                    <option value="Leica">Leica (M / Q / SL 系列)</option>
+                    <option value="Panasonic">Panasonic (Lumix S / G 系列)</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="userNote" class="form-label">想試拍的鏡頭焦段或拍攝需求</label>
+                  <textarea class="form-control" id="userNote" rows="3" placeholder="例如：想比較 24-70mm F2.8 與 35mm F1.4 的重量與對焦速度..."></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreeCheck" required>
+                    <label class="form-check-label text-secondary" for="agreeCheck">
+                      我同意門市預約規範，並攜帶本人身分證件進行器材體驗。
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="submit" class="btn btn-warning fw-bold w-100 py-2">
+                    <i class="bi bi-send-fill me-1"></i>立即送出預約
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="card h-100 border-secondary p-4 d-flex flex-column">
+            <h4 class="fw-bold mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i>台北博愛漢口旗艦館</h4>
+            <p class="text-secondary small mb-3">
+              地址：台北市中正區博愛路（台北相機街核心區）<br>
+              營業時間：每日 11:00 – 21:00（全年無休）
+            </p>
+            <div class="ratio ratio-4x3 flex-grow-1 rounded overflow-hidden border border-secondary">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.707789217492!2d121.50906837605107!3d25.043988937889598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90b08069d51%3A0x600b0f82d8814a4f!2z5Y-w5YyX55u45qmf6KGX!5e0!3m2!1szh-TW!2stw!4v1710000000000!5m2!1szh-TW!2stw"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="台北相機街地圖">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="specModal" tabindex="-1" aria-labelledby="specModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title fw-bold text-warning" id="specModalLabel">
+            <i class="bi bi-sliders me-2"></i>六大相機品牌代表旗艦規格速查表
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead class="table-dark">
+                <tr>
+                  <th>品牌</th>
+                  <th>代表旗艦 / 熱門機型</th>
+                  <th>感光元件</th>
+                  <th>最高連拍 / 錄影規格</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-bold">Sony</td>
+                  <td>α1 II / α7R V</td>
+                  <td>5,010 萬畫素全片幅</td>
+                  <td>30 fps 無黑屏 / 8K 30p</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Canon</td>
+                  <td>EOS R5 Mark II</td>
+                  <td>4,500 萬畫素全片幅</td>
+                  <td>30 fps 電子快門 / 8K 60p RAW</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Nikon</td>
+                  <td>Z8 / Z9</td>
+                  <td>4,571 萬畫素堆疊全片幅</td>
+                  <td>20 fps RAW 連拍 / 8.3K 60p N-RAW</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Fujifilm</td>
+                  <td>GFX100 II / X-T5</td>
+                  <td>1 億 200 萬畫素中片幅 / 4,020 萬 APS-C</td>
+                  <td>20 種軟片模擬 / 8K 30p</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Leica</td>
+                  <td>M11 / Q3 43</td>
+                  <td>6,030 萬畫素背照式全片幅</td>
+                  <td>三倍解析度技術 / APO 頂級鏡頭</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Panasonic</td>
+                  <td>Lumix S1R II / S5 IIX</td>
+                  <td>全片幅 CMOS (L-Mount)</td>
+                  <td>Open Gate 6K/8K / ProRes 外錄</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉視窗</button>
+          <a href="#contactSection" class="btn btn-warning fw-bold" onclick="bootstrap.Modal.getInstance(document.getElementById('specModal')).hide();">
+            前往預約實機試拍
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 bg-body-tertiary text-center text-secondary border-top">
+    <div class="container small">
+      &copy; 2026 LENS & LIGHT Camera Guide. 採用 Bootstrap 5.3 響應式框架設計。
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
